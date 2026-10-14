@@ -1,0 +1,18 @@
+model:
+  num_emotions: 8
+  hidden_dim: 512
+  num_heads: 8
+
+training:
+  batch_size: 32
+  num_epochs: 100
+  learning_rate: 0.001
+  weight_decay: 1e-5
+  optimizer: adam
+
+data:
+  sample_rate: 16000
+  num_workers: 4
+
+device: cuda
+seed: 42
